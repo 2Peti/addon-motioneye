@@ -3,7 +3,7 @@
   "version": "dev",
   "slug": "motioneye",
   "description": "Simple, elegant and feature-rich CCTV/NVR for your cameras",
-  "url": "https://github.com/hassio-addons/addon-motioneye",
+  "url": "https://github.com/2Peti/addon-motioneye",
   "ingress": true,
   "ingress_port": 0,
   "panel_icon": "mdi:cctv",
@@ -20,7 +20,7 @@
   "apparmor": false,
   "video": true,
   "privileged": ["DAC_READ_SEARCH", "SYS_ADMIN"],
-  "map": ["media:rw", "share:rw", "ssl"],
+  "map": ["/dev/sdb1:/dev/sdb1:rwm","media:rw", "share:rw", "ssl"],
   "options": {
     "motion_webcontrol": false,
     "ssl": true,
